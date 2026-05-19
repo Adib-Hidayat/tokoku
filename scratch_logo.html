@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo Test</title>
+    <style>
+        body { background: #fcfade; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .logo-container { width: 400px; height: 400px; border: 1px solid #ccc; background: white; }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <svg viewBox="0 0 120 120" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(60, 60)">
+                <!-- Text JMS -->
+                <text x="0" y="12" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" font-style="italic" fill="#00e600" text-anchor="middle" letter-spacing="-1">JMS</text>
+                
+                <!-- Lingkaran Atas (Top Swoosh) -->
+                <g>
+                    <!-- Oren: Kotak di kiri, Lancip di kanan (Smoothed) -->
+                    <path d="M -55,-12 L -55,-26 C -25,-75 35,-75 58,-35 C 25,-55 -20,-48 -55,-12 Z" fill="#ff7f00"/>
+                    <!-- Hijau: Menempel di atas oren -->
+                    <path d="M 0,-58 C 30,-65 50,-55 58,-35 C 40,-52 20,-55 0,-58 Z" fill="#00e600"/>
+                </g>
+
+                <!-- Lingkaran Bawah (Bottom Swoosh) -->
+                <g transform="rotate(180)">
+                    <!-- Oren: Kotak di kanan (visual), Lancip di kiri (visual) -->
+                    <path d="M -55,-12 L -55,-26 C -25,-75 35,-75 58,-35 C 25,-55 -20,-48 -55,-12 Z" fill="#ff7f00"/>
+                    <!-- Hijau: Menempel -->
+                    <path d="M 0,-58 C 30,-65 50,-55 58,-35 C 40,-52 20,-55 0,-58 Z" fill="#00e600"/>
+                </g>
+            </g>
+        </svg>
+    </div>
+</body>
+</html>
