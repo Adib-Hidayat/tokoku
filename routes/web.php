@@ -10,7 +10,7 @@ use App\Http\Controllers\StockController;
 use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
-    return redirect()->route('login');
+    return view('dashboard');
 });
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
